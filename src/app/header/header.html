@@ -1,0 +1,47 @@
+<mat-sidenav-container  fxHide.gt-md class="example-container">
+    <!-- Sidenav --> 
+    <mat-sidenav #sidenav mode="side" [(opened)]="opened" class="sidenav-content1">
+        <div class="logo">
+            <img src="assets/Xyntra-logo.png" alt="Logo" />
+        </div>
+        <div class="sidenav-links">
+            <ul>
+                <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
+                <li><a routerLink="/about" routerLinkActive="active">About</a></li>
+                <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
+                <li><a routerLink="/contact" routerLinkActive="active">Blogs</a></li>
+            </ul>
+
+        </div>
+        <div class="header-btn">
+            <button routerLink="/signin" class="btn signin-btn">Sign In</button>
+            <button routerLink="/signup" class="btn signup-btn">Sign Up</button>
+        </div>
+    </mat-sidenav>
+
+    <!-- Main Content -->
+    <mat-sidenav-content class="sidenav-icon">
+        <button mat-icon-button (click)="sidenav.toggle()" class="example-icon" aria-label="Toggle sidenav">
+            <mat-icon>menu</mat-icon>
+        </button>
+    </mat-sidenav-content>
+</mat-sidenav-container>
+
+<div class="header-container padding" fxHide.lt-md>
+    <div class="logo">
+        <img src="assets/Xyntra-logo.png" alt="Logo" />
+    </div>
+    <div class="nav-links">
+        <ul>
+            <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
+            <li><a routerLink="/about" routerLinkActive="active">About</a></li>
+            <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
+            <li><a routerLink="/contact" routerLinkActive="active">Blogs</a></li>
+        </ul>
+
+    </div>
+    <div class="header-btn">
+        <button routerLink="/signin" class="btn signin-btn">Sign In</button>
+        <button routerLink="/signup" class="btn signup-btn">Sign Up</button>
+    </div>
+</div>
